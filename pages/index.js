@@ -4,12 +4,13 @@ import classes from '../styles/global.module.scss'
 import Examples from "../components/examples/examples";
 
 export default function Home() {
+  const linksJS = [
+    { name: 'Keyboard', link: 'https://keyboard.nikitabashdev.ru/', description: 'Экранная клавиатура' },
+    { name: 'Tic-tac-toe', link: 'https://tic-tac-toe.nikitabashdev.ru/', description: 'Классические крестики-нолики' },
+  ]
+
   return (
     <div className="container">
-      <Head>
-        <title>Magic Switch</title>
-      </Head>
-
       <main>
         <Header />
 
@@ -17,7 +18,7 @@ export default function Home() {
           Мои работы на чистом <b>JavaScript</b>:
         </p>
 
-        <Examples />
+        <Examples content={linksJS} />
 
         <p className="description">
           Мои работы на <b>React</b>:
@@ -42,7 +43,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 2rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -75,6 +76,7 @@ export default function Home() {
         }
 
         .description {
+          margin-top: 3rem;
           line-height: 1.5;
           font-size: 1.5rem;
         }

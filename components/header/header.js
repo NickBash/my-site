@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<>
 			<h1 className={classes.title}>
-				Welcome to <a href="/">MagicSwitch</a>
+				Welcome to <a href="/">Portfolio</a>
 			</h1>
 
 			<p className={classes.description}>
