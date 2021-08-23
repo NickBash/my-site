@@ -7,6 +7,11 @@ export default function Home() {
   const linksJS = [
     { name: 'Keyboard', link: 'https://keyboard.nikitabashdev.ru/', description: 'Экранная клавиатура' },
     { name: 'Tic-tac-toe', link: 'https://tic-tac-toe.nikitabashdev.ru/', description: 'Классические крестики-нолики' },
+    { name: 'Sapper', link: 'https://sapper.nikitabashdev.ru/', description: 'Классический сапер' },
+  ]
+
+  const linksReact = [
+    { name: 'CloudStore', link: 'https://cloud.nikitabashdev.ru/', description: 'Облачное хранилище' },
   ]
 
   return (
@@ -24,7 +29,7 @@ export default function Home() {
           Мои работы на <b>React</b>:
         </p>
 
-        <Examples />
+        <Examples content={linksReact} />
 
       </main>
 
