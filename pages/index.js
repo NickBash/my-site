@@ -12,6 +12,7 @@ export default function Home() {
 
   const linksReact = [
     { name: 'CloudStore', link: 'https://cloud.nikitabashdev.ru/', description: 'Облачное хранилище' },
+    { name: 'Paint', link: 'https://paint.nikitabashdev.ru/', description: 'Рисовалка' },
   ]
 
   return (
