@@ -7,7 +7,7 @@ const Examples = ({content}) => {
 			{content
 				? content.map(link =>
 				<a key={link.name} href={link.link} className={classes.card}>
-					<h3>{link.name} &rarr;</h3>
+					<h3>{link.name}</h3>
 					<p>{link.description}</p>
 				</a>
 			)
