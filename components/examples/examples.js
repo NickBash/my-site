@@ -1,16 +1,20 @@
 import React from 'react';
-import classes from "./examples.module.scss";
+import styles from "./examples.module.scss";
 
 const Examples = ({content}) => {
 	return (
-		<div className={classes.grid}>
+		<div className='grid max-w-full justify-content-center mt-6 mb-6'>
 			{content
 				? content.map(link =>
-				<a key={link.name} href={link.link} className={classes.card}>
-					<h3>{link.name}</h3>
-					<p>{link.description}</p>
-				</a>
-			)
+					<div className='col-12 md:col-6 lg:col-3' key={link.name}>
+						<div className={styles.card}>
+							<a href={link.link}>
+								<h3>{link.name}</h3>
+								<p>{link.description}</p>
+							</a>
+						</div>
+					</div>
+				)
 				: null}
 		</div>
 	);

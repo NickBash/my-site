@@ -1,15 +1,14 @@
 import React from 'react';
-import classes from "./header.module.scss";
 
 const Header = () => {
 	return (
 		<>
-			<h1 className={classes.title}>
-				Welcome to <a href="/">Portfolio</a>
+			<h1 className='text-center text-7xl'>
+				Welcome to <a href="/" className='text-blue-600 underline'>Portfolio</a>
 			</h1>
 
-			<p className={classes.description}>
-				Мой профиль на GitHub <a href="https://github.com/NickBash">Nikita Bashkankov</a>
+			<p className='text-center text-3xl'>
+				Мой профиль на GitHub <a href="https://github.com/NickBash" className='text-blue-600 underline'>Nikita Bashkankov</a>
 			</p>
 		</>
 	);
