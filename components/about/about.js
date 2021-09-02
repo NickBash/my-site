@@ -11,7 +11,7 @@ const About = () => {
 			<div className={styles.about__content}>
 				<div className="min-w-full text-center">
 					<div>
-						<Image src='/img1.jpg' width='300' height='400'/>
+						<Image priority={true} src='/img1.jpg' width='300' height='400'/>
 					</div>
 					<div className={styles.about__descr}>
 						<p>Привествую! Меня зовут Никита. Я frontend(react)/backend(express) разработчик.</p>
