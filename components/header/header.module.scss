@@ -1,0 +1,65 @@
+.portfolio {
+  width: 21ch;
+  color: white;
+  font-size: 72px;
+  font-family: monospace;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 6px solid orange;
+  animation: flashing-border 0.75s step-end infinite, printed-text 3s steps(21);
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: orange;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: orange;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0;
+  }
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #0c0c0c;
+  color: white;
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+  .portfolio {
+    width: 100%;
+    color: white;
+    white-space: normal;
+    font-size: 72px;
+    font-family: monospace;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio {
+    font-size: 40px;
+    font-family: monospace;
+  }
+}

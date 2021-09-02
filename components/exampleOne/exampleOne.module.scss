@@ -16,35 +16,40 @@
   }
 }
 
-//.card {
-//  border: 1px solid #eaeaea;
-//  border-radius: 4px;
-//  padding: 10px 20px;
-//  font-size: 1.5rem;
-//  height: 100%;
-//}
-
 .card {
-  position: relative;
-  border-top: 4px solid #898989;
-  border-left: 4px solid #898989;
-  border-right: 4px solid #eaeaea;
-  border-bottom: 4px solid #eaeaea;
-  padding: 10px 20px 70px;
-  font-size: 1.5rem;
   height: 100%;
-  cursor: pointer;
+  position: relative;
+  padding: 3px;
+  background: linear-gradient(30deg, var(--orange-spec),
+          rgba(50, 50, 50, 0.2),
+          rgba(50, 50, 50, 0.2),
+          rgba(50, 50, 50, 0.2),
+          var(--blue-600));
+  transition: 1s;
+
+  &:hover {
+    background: linear-gradient(30deg, var(--orange-spec),
+            rgba(50, 50, 50, 0.2),
+            var(--blue-600));
+  }
+
+  &__content {
+    background: #0c0c0c;
+    padding: 10px 20px 70px;
+    font-size: 1.5rem;
+    height: 100%;
+    cursor: pointer;
+  }
 
   &:before {
     content: "";
     position: absolute;
-    bottom: -4px;
-    left: -4px;
-    width: 0px;
-    height: 0px;
-    border-top: 24px solid var(--blue-600);
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 24px solid var(--orange-spec);
     border-left: 24px solid #0c0c0c;
-    box-shadow: 5px -4px 8px -5px var(--blue-600);
   }
 
   &__buttonBlock {
@@ -64,29 +69,44 @@
     cursor: pointer;
     background: transparent;
     color: white;
-    border-radius: 3px;
     border: 2px solid var(--blue-600);
     transition: .3s;
     text-align: center;
     font-size: 1rem;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
       border: 2px solid orange;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: skew(75deg);
     }
   }
 
   &__descr {
     font-size: 1.5rem;
+    text-align: center;
+    font-family: monospace;
   }
 
   &__text {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
+    font-family: monospace;
   }
 
   ul {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
 
     li:before {
       content: "-";

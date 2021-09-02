@@ -1,23 +1,35 @@
 import React from 'react';
-import styles from "./examples.module.scss";
+import ExampleOne from "../exampleOne/exampleOne";
 
-const Examples = ({content}) => {
+const Examples = () => {
+	const content2 = [
+		{ name: 'Keyboard', link: 'https://keyboard.nikitabashdev.ru/', description: 'Экранная клавиатура' },
+		{ name: 'Tic-tac-toe', link: 'https://tic-tac-toe.nikitabashdev.ru/', description: 'Классические крестики-нолики' },
+		{ name: 'Sapper', link: 'https://sapper.nikitabashdev.ru/', description: 'Классический сапер' },
+	]
+
+	const content1 = [
+		{
+			name: 'CloudStore',
+			link: 'https://cloud.nikitabashdev.ru/',
+			description: 'Облачное хранилище' ,
+			client: ['React', 'Redux', 'Axios'],
+			server: ['Express', 'Mongoose', 'Jsonwebtoken']
+		},
+		{
+			name: 'Paint',
+			link: 'https://paint.nikitabashdev.ru/',
+			description: 'Рисовалка',
+			client: ['React', 'MobX', 'PrimeReact UI']
+		},
+	]
+
 	return (
-		<div className='grid max-w-full justify-content-center mt-6 mb-6'>
-			{content
-				? content.map(link =>
-					<div className='col-12 md:col-6 lg:col-3' key={link.name}>
-						<div className={styles.card}>
-							<a href={link.link}>
-								<h3>{link.name}</h3>
-								<p>{link.description}</p>
-							</a>
-						</div>
-					</div>
-				)
-				: null}
+		<div>
+			<ExampleOne content={content1} title={'React'}/>
+			<ExampleOne content={content2} title={'JavaScript'}/>
 		</div>
-	);
-};
+	)
+}
 
 export default Examples;

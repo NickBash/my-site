@@ -1,16 +1,20 @@
 import React from 'react';
+import styles from './header.module.scss'
+import Image from 'next/image'
 
 const Header = () => {
 	return (
-		<>
-			<h1 className='text-center text-7xl'>
-				Welcome to <a href="/" className='text-blue-600 underline'>Portfolio</a>
+		<div className={`${styles.block} min-h-screen`}>
+			<h1 className={`${styles.portfolio}`}>
+				Welcome to <span className='text-blue-600 underline'>Portfolio</span>
 			</h1>
-
-			<p className='text-center text-3xl'>
-				Мой профиль на GitHub <a href="https://github.com/NickBash" className='text-blue-600 underline'>Nikita Bashkankov</a>
-			</p>
-		</>
+			<p className={styles.subtitle}>Никита Башканков &#448; Nikita Bashkankov</p>
+			<div className='text-center text-3xl mt-6'>
+					<a href="https://github.com/NickBash">
+							<Image src="/github.png" alt="" width="64" height="64"/>
+					</a>
+			</div>
+		</div>
 	);
 };
 
