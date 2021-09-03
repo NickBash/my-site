@@ -5,7 +5,7 @@ import About from "../components/about/about";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="min-w-full">
       <main>
         <Header />
         <Content />

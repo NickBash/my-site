@@ -14,7 +14,7 @@ const About = () => {
 						<Image priority={true} src='/img1.jpg' width='300' height='400'/>
 					</div>
 					<div className={styles.about__descr}>
-						<p>Привествую! Меня зовут Никита. Я frontend(react)/backend(express) разработчик.</p>
+						<p>Привествую! Меня зовут Никита. Я frontend(react) / backend(express) разработчик.</p>
 						<h3>Мой стек</h3>
 							<p>HTML5, CSS3/SCSS, JavaScript, React, Redux/Redux-toolkit, Node.js(express), TypeScript</p>
 						<h3>Достижения</h3>
