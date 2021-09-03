@@ -8,7 +8,7 @@ const Header = () => {
 			<h1 className={`${styles.portfolio}`}>
 				Welcome to <span className='text-blue-600 underline'>Portfolio</span>
 			</h1>
-			<p className={styles.subtitle}>Никита Башканков &#448; Nikita Bashkankov</p>
+			<p className={styles.subtitle}>Никита Башканков <span className={styles.block__symbol}>I</span> Nikita Bashkankov</p>
 			<div className='text-center text-3xl mt-6'>
 					<a href="https://github.com/NickBash">
 							<Image src="/github.png" alt="" width="64" height="64"/>

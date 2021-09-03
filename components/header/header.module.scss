@@ -36,6 +36,10 @@
   justify-content: center;
   background: #0c0c0c;
   color: white;
+
+  &__symbol {
+    font-family: sans-serif;
+  }
 }
 
 .subtitle {
