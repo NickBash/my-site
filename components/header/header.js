@@ -11,7 +11,7 @@ const Header = () => {
 			<p className={styles.subtitle}>Никита Башканков <span className={styles.block__symbol}>I</span> Nikita Bashkankov</p>
 			<div className='text-center text-3xl mt-6'>
 					<a href="https://github.com/NickBash">
-							<Image src="/github.png" alt="" width="64" height="64"/>
+							<Image priority={true} src="/github.png" alt="" width="64" height="64"/>
 					</a>
 			</div>
 		</div>

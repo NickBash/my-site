@@ -14,9 +14,12 @@ const About = () => {
 						<Image priority={true} src='/img1.jpg' width='300' height='400'/>
 					</div>
 					<div className={styles.about__descr}>
-						<p>Привествую! Меня зовут Никита. Я frontend(react) / backend(express) разработчик.</p>
+						<p>Привествую! Меня зовут Никита. Я fullstack-разработчик.</p>
 						<h3>Мой стек</h3>
-							<p>HTML5, CSS3/SCSS, JavaScript, React, Redux/Redux-toolkit, Node.js(express), TypeScript</p>
+							<p>HTML5, CSS3, SASS, JavaScript(ES6+),
+								TypeScript, React, Next.js, Redux (Redux-toolkit), Angular,
+								RxJs, Node.js, Express.js, Git, MongoDB (mongoose),
+								webpack, BEM, Material-UI, ESLint, Prettier</p>
 						<h3>Достижения</h3>
 						<p>В 2018 году 1 место в национальном чемпионате Абилимпикс по компетенции "Веб-дизайн" (разработка фронтэнда).</p>
 						<h3>Контакты</h3>
