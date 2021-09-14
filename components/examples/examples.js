@@ -22,6 +22,12 @@ const Examples = () => {
 			description: 'Рисовалка',
 			client: ['React', 'MobX', 'PrimeReact UI']
 		},
+		{
+			name: 'Weather',
+			link: 'https://weather.nikitabashdev.ru/',
+			description: 'Погода',
+			client: ['React', 'Redux(Redux-toolkit)', 'Material-UI']
+		},
 	]
 
 	return (
